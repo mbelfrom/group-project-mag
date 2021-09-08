@@ -1,51 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets\style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <title>Landing Page</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets\style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <title>Feeling Hungry?</title>
+  </head>
+  <body>
+    <header>
+      <input
+        type="button"
+        style="position: absolute"
+        onclick="window.location.href = 'saved.html';"
+        value="&hearts;saved"
+        style="justify-content: right"
+      />
+    </header>
+    <section class="hero is-medium is-link">
+      <div class="hero-body">
+        <p
+          class="title"
+          style="text-align: center"
+          style="box-shadow: 10px 10px"
+        >
+          Feeling Hungry?
+        </p>
+      </div>
+    </section>
     <div class="container is-max-desktop">
-        <div class="notification is-primary is-size-3 has-text-centered"><strong>Choose a Protein</strong></div>
+      <div class="notification is-primary is-size-3 has-text-centered">
+        <strong>Choose a Protein</strong>
+      </div>
     </div>
-    <div class="container ">
-<div class="columns is-vcentered">
-  <div class="column is-one-quarter">
-      <div class="column">
+    <!-- <div class="container "> -->
+    <div class="columns is-vcentered">
+      <div class="column is-one-quarter">
+        <div class="column">
           <figure class="image is-1by1">
-  <img src="https://dinnerthendessert.com/wp-content/uploads/2020/03/CIlantro-Lime-Grilled-Chicken-1x1-1.jpg">
-</figure>
-      <div class="notification is-primary is-size-4"><div class="buttons">
-  <button class="button is-primary">Chicken</button>
-  </div>
-</div>
-   </strong></div>
-  </div>
-  <div class="column is-one-quarter">
-      <div class="column">
+            <img
+              src="https://dinnerthendessert.com/wp-content/uploads/2020/03/CIlantro-Lime-Grilled-Chicken-1x1-1.jpg"
+            />
+          </figure>
+          <div class="notification is-primary is-size-4">
+            <div class="buttons">
+              <button class="button is-primary">Chicken</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="column">
           <figure class="image is-1by1">
-  <img src="https://imagez.tmz.com/image/03/1by1/2021/04/12/033884e7d1a54acc80781fced643155c_xl.jpg">
-</figure>
-    <div class="notification is-primary is-size-4"><div class="buttons">
-  <button class="button is-primary ml-2">Beef</button>
-   </div>
-   </div>
-  </div></div>
-  <div class="column is-one-quarter">
-      <div class="column">
+            <img
+              src="https://imagez.tmz.com/image/03/1by1/2021/04/12/033884e7d1a54acc80781fced643155c_xl.jpg"
+            />
+          </figure>
+          <div class="notification is-primary is-size-4">
+            <div class="buttons">
+              <button class="button is-primary ml-2">Beef</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="column">
           <figure class="image is-1by1">
-  <img src="https://images.khaleejtimes.com/storyimage/KT/20201031/ARTICLE/201039788/AR/0/AR-201039788.jpg&NCS_modified=20210319112632&imageversion=1by1&exif=.jpg">
-</figure>
-      <div class="notification is-primary is-size-4"><div class="buttons">
-  <button class="button is-primary">Vegan</button>
-   </div>
-   </div>
-  </div>
-</div>
-</div>
-<script src="assets/script.js"></script>
+            <img
+              src="https://images.khaleejtimes.com/storyimage/KT/20201031/ARTICLE/201039788/AR/0/AR-201039788.jpg&NCS_modified=20210319112632&imageversion=1by1&exif=.jpg"
+            />
+          </figure>
+          <div class="notification is-primary is-size-4">
+            <div class="buttons">
+              <button class="button is-primary">Vegan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="assets/script.js"></script>
 </html>
