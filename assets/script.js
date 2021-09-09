@@ -18,5 +18,16 @@ function renderRecipe(recipe) {
   imgElement.setAttribute("width", "400");
   document.getElementById("recipe-img").append(imgElement);
 
-  const ingredientLi = document.createElement("li");
+  const ingredientDiv = document.getElementById("ingredients-li");
+  const ingredientElement = document.createElement("p");
+  ingredientElement.innerText = `${ingredients}`;
+  ingredientDiv.append(ingredientElement);
+
+  const directionsDiv = document.getElementById("directions-div");
+  const directionsElement = document.createElement("a");
+  const link = document.createTextNode("Click here for full directions.");
+  directionsElement.appendChild(link);
+  directionsElement.title = "Directions";
+  directionsElement.href = `${directions}`;
+  directionsDiv.append(directionsElement);
 }
