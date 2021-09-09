@@ -8,61 +8,76 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css"
     />
-    <!--Bulma Image Carousel Style Sheet-->
-    <link
-      href="~bulma-carousel/dist/css/bulma-carousel.min.css"
-      rel="stylesheet"
-    />
-    <title class="$title-color is-$white-ter">Saved results</title>
-    <div class="container is-fluid">
-      <div class="notification is-primary has-text-centered">Saved Recipes</div>
-    </div>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Saved Page</title>
   </head>
   <body>
-    <section class="section">
-      <div class="container">
-        <!-- Start Carousel -->
-        <div id="carousel-demo" class="carousel">
-          <div class="item-1">
-            <!-- Slide Content -->
+    <!--Bulma Image Carousel Style Sheet-->
+    <figcaption>
+      <div class="field is-grouped">
+        <div id="chk" class="modal">
+          <div class="modal-background">Chicken Protein</div>
+          <div class="modal-content">
+            <p class="image is-4by3">All of your saved chicken based protein selections are conveniently located here.
+              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
+            </p>
           </div>
-          <div class="item-2">
-            <!-- Slide Content -->
-          </div>
-          <div class="item-3">
-            <!-- Slide Content -->
-          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
         </div>
-        <!-- End Carousel -->
-        <!--//Saved recipes carousel
-// Initialize all div with carousel class
-var recipeImages = bulmaCarousel.attach('.carousel', options);
-
-// Loop on each carousel initialized
-for(var i = 0; i < recipeImages.length; i++) {
-	// Add listener to  event
-	recipeImages[i].on('before:show', state => {
-		console.log(state);
-	});
-}
-
-// Access to bulmaCarousel instance of an element
-var element = document.querySelector('carousel-demo');
-if (element && element.bulmaCarousel) {
-	// bulmaCarousel instance is available as element.bulmaCarousel
-	element.bulmaCarousel.on('before-show', function(state) {
-		console.log(state);
-	});
-}-->
+        <div>
+          <button id="ch1" class="button is-danger is-large" id="lanuchModal">Chicken Recipes</button>
+        </div>
+        <div id="beef" class="modal">
+          <div class="modal-background">Beef Protein</div>
+          <div class="modal-content">
+            <p class="image is-4by3">All of your saved beef based protein selections are conveniently located here.
+              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
+            </p>
+          </div>
+          <button id="b1" class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <div>
+          <button class="button is-danger is-large" id="lanuchModal">Beef Recipes</button>
+        </div>
+        <div id="Vegan" class="modal">
+          <div class="modal-background">Vegan Protein</div>
+          <div class="modal-content">
+            <p class="image is-4by3">All of your saved vegan based protein selections are conveniently located here.
+              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
+            </p>
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <div>
+          <button id="v1" class="button is-danger is-large" id="lanuchModal">Vegan Recipes</button>
+        </div>
       </div>
-    </section>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    </figcaption>  
     <script>
-      bulmaCarousel.attach('#carousel-demo', {
-        slidesToScroll: 1,
-      	slidesToShow: 4
+      $("#lanuchModal").click(function() {
+       
+        $(".modal").addClass("is-active"); 
+       
       });
+       
+       
+       
+       
+      $(".modal-close").click(function() {
+       
+         $(".modal").removeClass("is-active");
+       
+      });
+       
+       
+       
+       
+      $("#closebtn").click(function() {
+       
+         $(".modal").removeClass("is-active");
+       
+      });
+       
       </script>
   </body>
 </html>
