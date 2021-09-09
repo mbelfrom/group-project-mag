@@ -27,3 +27,8 @@ fetch(edamam_url + params)
     console.log(data);
     // TODO: This is where we will build our recipe elements
   });
+
+
+  var requestUrl = 'https://api.documenu.com/v2/restaurants/search/geo';
+
+var responseText = document.getElementById('response-text');
