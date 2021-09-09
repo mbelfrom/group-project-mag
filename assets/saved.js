@@ -14,4 +14,7 @@ $("#lanuchModal").click(function() {
 //User Access to local storage
 
 var saveRecipe = localStorage.setItem(this);
-var accessRecipes = 
+
+
+var accessRecipes = localStorage.getItem(this);
+
