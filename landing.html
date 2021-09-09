@@ -11,6 +11,7 @@
     <title>Feeling Hungry?</title>
   </head>
   <body>
+      <!-- Header -->
     <header>
       <input
         type="button"
@@ -27,12 +28,13 @@
         </p>
       </div>
     </section>
+    <!-- Choose a Protein Container -->
     <div class="container is-max-desktop mt-4">
       <div class="notification is-primary is-size-3 has-text-centered">
         <strong>Choose a Protein</strong>
       </div>
     </div>
-    <!-- <div class="container "> -->
+    <!-- columns -->
     <div class="columns is-centered">
       <div class="column is-one-third">
         <div class="column">
@@ -43,8 +45,8 @@
           </figure>
           <div class="notification is-primary is-size-4 mt-4">
               <!-- Chicken Button -->
-            <div class="buttons">
-              <button class="button is-large is-primary"> <strong>Chicken</strong></button>
+            <div class="buttons" onclick="window.location.href = 'results.html';" >
+              <button class="button is-large is-primary" id='chicken'> <strong>Chicken</strong></button>
             </div>
           </div>
         </div>
@@ -58,8 +60,8 @@
           </figure>
           <div class="notification is-primary is-size-4 mt-4">
               <!-- Beef Button -->
-            <div class="buttons">
-              <button class="button is-large is-primary flex-center"><strong>Beef</strong></button>
+            <div class="buttons"  onclick="window.location.href = 'results.html';">
+              <button class="button is-large is-primary flex-center" id='beef'><strong>Beef</strong></button>
             </div>
           </div>
         </div>
@@ -73,8 +75,8 @@
           </figure>
           <div class="notification has-text-centered is-primary is-size-4 mt-4">
               <!-- Vegan Button -->
-            <div class="buttons">
-              <button class="button is-large is-primary">
+            <div class="buttons" onclick="window.location.href = 'results.html';" >
+              <button class="button is-large is-primary" id='vegan'>
                  <strong> Vegan</strong></button>
             </div>
           </div>
