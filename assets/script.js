@@ -6,25 +6,30 @@ const chicken_api =
 
 const api_key = "32e44ba6f69c2f616235a17676cd62e1";
 
-get_chickenBtn.addEventListener("click", function redirect() {
-  window.location.href = "results.html";
-  () => {
+// function redirect() {
+//   window.location.href = "results.html";
+
+get_chickenBtn.addEventListener("click", () => {
       // fetching chicken recipe API
-      fetch(chicken_api)
-      .then(function (response) {
-          // returning the API in an array
-          return response.json();
-        })
-        .then(function (data) {
-            console.log(data.hits[0].recipe.url);
+fetch(chicken_api)
+    .then(function (response) {
+    // returning the API in an array
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data.hits[0].recipe.url);
             
-            //   grabbing needed data from the returned array
-            const recipe = completedRecipe({
-                recipeName: data.hits[0].recipe.label,
-                image: data.hits[0].recipe.image,
-                ingredients: data.hits[0].recipe.ingredientLines,
-                directionsURL: data.hits[0].recipe.url,
-            });
-        });
-    };
-});
+        //   grabbing needed data from the returned array
+        // function completedRecipe({
+        //     recipeName = data.hits[0].recipe.label,
+        //     image = data.hits[0].recipe.image,
+        //     ingredients = data.hits[0].recipe.ingredientLines,
+        //     directionsURL = data.hits[0].recipe.url,
+        //     })
+        
+        })
+    })
+
+
+// need to redirect user to results page depending on what protein button is clicked.
+// need to append the recipe data to the results page 
