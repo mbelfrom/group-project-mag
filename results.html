@@ -16,7 +16,7 @@
         type="button"
         style="position: absolute"
         onclick="window.location.href = 'saved.html';"
-        value="❤️ save" 
+        value="❤️ Saved Recipes"
         style="justify-content: right"
       />
     </header>
@@ -25,12 +25,17 @@
         <p class="title">Recipe</p>
       </div>
     </section>
-
+    <div class="columns">
+      <div class="column is-half is-offset-1">
+<div class="buttons mt-4">
+  <button class="button is-danger">Save this Recipe</button>
+</div>
     <div class="title" id="recipe-result"></div>
     <div id="recipe-img"></div>
-    <div id='ingredients-li'></div>
-    <div id='directions-div'></div>
-    
+    <div class="subtitle mt-4" id='ingredients-li'></div>
+    <div class="subtitle" id='directions-div'></div>
+    </div>
+    </div>
   </body>
   <script src="./assets/results.js"></script>
 </html>
