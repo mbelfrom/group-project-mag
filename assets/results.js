@@ -24,11 +24,27 @@ fetch(edamam_url + params)
   .then((res) => res.json())
   // access the data
   .then(function (data) {
-    console.log(data);
+    // console.log(data.hits[0].recipe.url);
     // TODO: This is where we will build our recipe elements
-  });
+    const recipeName = data.hits[0].recipe.label;
+    const image = data.hits[0].recipe.image;
+    const ingredients = data.hits[0].recipe.ingredientLines;
+    const directions = data.hits[0].recipe.url;
+    
+    const recipeDiv = document.getElementById('recipe-result');
 
+    const recipeElement = document.createElement('h1');
+    recipeElement.innerText = `${recipeName}`;
+    recipeDiv.append(recipeElement); 
 
-  var requestUrl = 'https://api.documenu.com/v2/restaurants/search/geo';
+    const imgElement = document.createElement('img');
+    imgElement.setAttribute("src", `${image}`);
+    imgElement.setAttribute('height','300');
+    imgElement.setAttribute('width', '400');
+    document.getElementById('recipe-img').append(imgElement);
 
-var responseText = document.getElementById('response-text');
+    const ingredientLi = document.createElement('li');
+    
+
+    });
+  
