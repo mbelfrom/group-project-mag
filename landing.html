@@ -12,71 +12,73 @@
     <title>Feeling Hungry?</title>
   </head>
   <body>
+      <!-- Header -->
     <header>
       <input
         type="button"
         style="position: absolute"
         onclick="window.location.href = 'saved.html';"
-        value="&hearts;saved"
+        value="❤️ saved"
         style="justify-content: right"
       />
     </header>
-    <section class="hero is-medium is-link">
+    <section class="hero is-info">
       <div class="hero-body">
-        <p
-          class="title"
-          style="text-align: center"
-          style="box-shadow: 10px 10px"
-        >
+        <p class="title">
           Feeling Hungry?
         </p>
       </div>
     </section>
-    <div class="container is-max-desktop">
+    <!-- Choose a Protein Container -->
+    <div class="container is-max-desktop mt-4">
       <div class="notification is-primary is-size-3 has-text-centered">
         <strong>Choose a Protein</strong>
       </div>
     </div>
-    <!-- <div class="container "> -->
-    <div class="columns is-vcentered">
-      <div class="column is-one-quarter">
+    <!-- columns -->
+    <div class="columns is-centered">
+      <div class="column is-one-third">
         <div class="column">
           <figure class="image is-1by1">
-            <img
+            <img style="border-radius: 25px;"
               src="https://dinnerthendessert.com/wp-content/uploads/2020/03/CIlantro-Lime-Grilled-Chicken-1x1-1.jpg"
             />
           </figure>
-          <div class="notification is-primary is-size-4">
+          <div class="notification is-primary is-size-4 mt-4">
+              <!-- Chicken Button -->
             <div class="buttons">
-              <button class="button is-primary">Chicken</button>
+              <button class="button is-large is-primary" id='chicken'> <strong>Chicken</strong></button>
             </div>
           </div>
         </div>
       </div>
-      <div class="column is-one-quarter">
-        <div class="column">
+      <div class="column is-one-third">
+        <div class="column has-text-centered">
           <figure class="image is-1by1">
-            <img
+            <img style="border-radius: 25px;"
               src="https://imagez.tmz.com/image/03/1by1/2021/04/12/033884e7d1a54acc80781fced643155c_xl.jpg"
             />
           </figure>
-          <div class="notification is-primary is-size-4">
+          <div class="notification is-primary is-size-4 mt-4">
+              <!-- Beef Button -->
             <div class="buttons">
-              <button class="button is-primary ml-2">Beef</button>
+              <button class="button is-large is-primary flex-center" id='beef'><strong>Beef</strong></button>
             </div>
           </div>
         </div>
       </div>
-      <div class="column is-one-quarter">
+      <div class="column is-one-third">
         <div class="column">
           <figure class="image is-1by1">
-            <img
+            <img style="border-radius: 25px;"
               src="https://images.khaleejtimes.com/storyimage/KT/20201031/ARTICLE/201039788/AR/0/AR-201039788.jpg&NCS_modified=20210319112632&imageversion=1by1&exif=.jpg"
             />
           </figure>
-          <div class="notification is-primary is-size-4">
+          <div class="notification has-text-centered is-primary is-size-4 mt-4">
+              <!-- Vegan Button -->
             <div class="buttons">
-              <button class="button is-primary">Vegan</button>
+              <button class="button is-large is-primary" id='vegan'>
+                 <strong> Vegan</strong></button>
             </div>
           </div>
         </div>
