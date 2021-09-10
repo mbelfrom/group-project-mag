@@ -42,7 +42,7 @@ fetch(edamam_url + params)
     imgElement.setAttribute('width', 'auto');
     document.getElementById('recipe-img').append(imgElement);
 
-    const ingredientDiv = document.getElementById("ingredients-li");
+    const ingredientDiv = document.getElementById("ingredients-p");
     const ingredientElement = document.createElement('p');
     ingredientElement.innerText = `${ingredients}`;
     ingredientDiv.append(ingredientElement);

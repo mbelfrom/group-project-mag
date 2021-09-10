@@ -12,27 +12,25 @@
   </head>
   <body>
     <header>
-      <input
-        type="button"
-        style="position: absolute"
-        onclick="window.location.href = 'saved.html';"
-        value="❤️ Saved Recipes"
-        style="justify-content: right"
-      />
-    </header>
-    <section class="hero is-info">
-      <div class="hero-body">
-        <p class="title">Recipe</p>
+      <section class="hero is-info">
+        <div class="hero-body">
+          <h1 class="title">Recipe</h1>
+        </header>
       </div>
     </section>
     <div class="columns">
       <div class="column is-half is-offset-1">
 <div class="buttons mt-4">
-  <button class="button is-danger">Save this Recipe</button>
+  <button class="button is-danger">Save This Recipe</button>
+  <a href="index.html" class="button is-primary">Home</a>
+  <button onclick='window.location.reload()'
+  class="button is-warning">New Recipe</button>
+  <a href="saved.html" class="button is-danger is-light">Favorite Recipes</a>
 </div>
-    <div class="title" id="recipe-result"></div>
+    <h4 class="title" id="recipe-result"></h4>
     <div id="recipe-img"></div>
-    <div class="subtitle mt-4" id='ingredients-li'></div>
+    <h4 class="title mt-4">Ingredients</h4>
+    <div class="subtitle mt-4" id='ingredients-p'></div>
     <div class="subtitle" id='directions-div'></div>
     </div>
     </div>
