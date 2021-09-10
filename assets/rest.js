@@ -1,4 +1,4 @@
-var requestUrl = 'https://api.documenu.com/v2/restaurant/4072702673999819?key=f1f6dd6fce22010400139ef214b7da62';
+var requestUrl = 'https://api.documenu.com/v2/restaurant/4072702673999819?key=40e793cde7d7318555e7aba7e6fbe541';
 
 function getData (){
     fetch (requestUrl)
@@ -11,17 +11,22 @@ function getData (){
         const lat = data.result.geo.lat
         const lon = data.result.geo.lon
         const name = data.result.restaurant_name
+        const web = data.result.restaurant_website
+
+
+        const webDiv = document.getElementById("webDiv");
+        const webElement = document.createElement("a");
+        const link = document.createTextNode('Check out your nearest restaurant!');
+        webElement.appendChild(link);
+        webElement.title = "Restaurant URL";
+        webElement.href = (`${web}`);
+        webDiv.append(webElement);
 
         const restname = document.getElementById('rest-name');
         const nameElement = document.createElement('h1');
         nameElement.innerText = `${name}`;
         restname.append(nameElement);
-        
-        const restDiv = document.getElementById("rest-div");
-        const restElement = document.createElement('a');
-        const link = document.createTextNode('Check out your nearest restaurant!');
-        restElement.appendChild(link);
-        restDiv.append(restElement);
+
     })
 }
 getData ()
