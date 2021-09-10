@@ -71,6 +71,7 @@ $('#populate').html('Back')
 }
 
 function removeRecipe(index) {
+  console.log(removeRecipe);
 var recipes = JSON.parse(localStorage.getItem("recipes"));
 recipes.splice(index, 1);
 window.localStorage.setItem("recipes", JSON.stringify(recipes));

@@ -17,6 +17,9 @@ Have you ever been stuck not knowing what to eat for dinner? Our web app will ge
 
 ## Images
 
+![Homework screenshot](./assets/images/homepage.png)
+
+
 ## Questions/Contact
 Please contact us with any questions at...
 Our recipe generator app can be found hosted at...
