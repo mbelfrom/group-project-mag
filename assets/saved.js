@@ -51,3 +51,30 @@ function populateModal(index) {
 function modalClose() {
   $(".modal").removeClass("is-active");
 }
+function populateMeals() {
+  var recipes = JSON.parse(localStorage.getItem("recipes"));
+recipes.forEach(function(recipe, index) {
+  var element = `
+      <div class="column is-one-quarter">
+          <button class="delete" onclick="removeRecipe(${index})"></button></br>
+        <a href="#" onclick="populateModal(${index})"> <img src=${recipe.image} alt="${recipe.label}"></a></br>
+        <h3>${recipe.label}</h3>
+      </div>
+  `
+  $('#meals').append(element)
+})
+$('#populate').prop('value', 'Back').click(function() {
+  window.localStorage.removeItem("recipe")
+  window.location.href = 'index.html'
+})
+$('#populate').html('Back')
+}
+
+function removeRecipe(index) {
+var recipes = JSON.parse(localStorage.getItem("recipes"));
+recipes.splice(index, 1);
+window.localStorage.setItem("recipes", JSON.stringify(recipes));
+$('.column').remove();
+populateMeals();
+console.log()
+}
