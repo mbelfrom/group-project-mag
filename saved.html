@@ -4,38 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css"
-    />
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title class="$title-color is-$white-ter">Saved results</title>
     <div class="container is-fluid">
       <div class="notification is-primary has-text-centered is-size-5 ">All of you recipes gathered from your protein selection are just one <strong>"click"</strong> away!</div>
     </div>
   </head>
   <body>
-    <!--Bulma Image Carousel Style Sheet-->
+    <div class="container is-fluid">
+      <div class="columns">
+        <div class="column is-full"></div>
+      </div>
+          
+      <div id="meals" class="columns is-multiline"></div>
+    </div>
 
+    <div class="container is-fluid">
+      <div class="columns">
+        <div class="column is-full"></div>
+      </div>
+
+    <button class="button is-danger is-large" id="populate">Retrieve Recipes</button>
+          
     <figcaption>
       <div class="modal">
         <div class="modal-background"></div>
-        <div class="modal-content">
-          <p class="image is-4by3">
-            <img src="https://depositphotos.com/14931205/stock-photo-open-old-recipe-book.html" alt="">
-          </p>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p id="modal-title" class="modal-card-title"></p>
+            <button onclick="modalClose()" class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+              <img id="modal-image" src="" alt="">
+            <p>
+              <ul id="modal-ingredients"></ul>
+            </p>
+            <p>
+              <a id="view-recipe" href="">View Full Recipe</a>
+            </p>
+          </section>
         </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-       </div>
       </div>
-      <button class="button is-danger is-large has-text-black" id="launchModal">Retrieve Recipes</button>
-    </figcaption>  
-<script src="assets/saved.js"></script>
+    </figcaption>
+    <script src="assets/saved.js"></script>
   </body>
 </html>
-  
-  
-  
   
   
   
