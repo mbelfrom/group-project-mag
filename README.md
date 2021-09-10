@@ -17,6 +17,12 @@ Have you ever been stuck not knowing what to eat for dinner? Our web app will ge
 
 ## Images
 ![image](https://user-images.githubusercontent.com/87721575/132913782-9d9b3185-3846-444c-8ef1-0ed828521688.png)
+![image](https://user-images.githubusercontent.com/87721575/132920819-a7f19c4c-9611-4589-a18e-a29b927addec.png)
+![image](https://user-images.githubusercontent.com/87721575/132920868-1aa649b3-6a04-4bcc-b08e-1a58993152cd.png)
+![image](https://user-images.githubusercontent.com/87721575/132920888-9675bc85-aaa3-494c-bb9f-e0646645bccf.png)
+
+
+
 
 
 
