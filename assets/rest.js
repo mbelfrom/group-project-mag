@@ -1,8 +1,4 @@
 var requestUrl = "https://api.documenu.com/v2/restaurants/search/geo?";
-//   lat=40.688072&lon=-73.997385&distance=1&search=buffalo%20chicken";
-
-// https://api.documenu.com/v2/menuitems/search/geo?
-// https://api.documenu.com/v2/restaurants/search/geo?lat=40.688072&lon=-73.997385&distance=1&fullmenu&key=35e07563b7ad4eac86d6ccfd97946762
 
 window.navigator.geolocation.getCurrentPosition(function (geoData) {
   const urlParams = new URLSearchParams(window.location.search);
@@ -26,7 +22,6 @@ window.navigator.geolocation.getCurrentPosition(function (geoData) {
       const restaurantPhone = results.data[0].restaurant_phone;
       const restaurantWebsite = results.data[0].restaurant_website;
 
-      
       // append restaurant name
       const restDiv = document.getElementById("rest-name");
       const nameElement = document.createElement("h1");
