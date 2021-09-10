@@ -59,6 +59,10 @@ fetch(edamam_url + params)
     directionsElement.href = (`${directions}`);
     directionsDiv.append(directionsElement);
     
+    // Retrieve from local storage 
+const saveRecipes = window.localStorage
 
+    window.localStorage.setItem("recipe", JSON.stringify(data.hits[0].recipe))
+    
     });
   
