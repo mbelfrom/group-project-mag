@@ -8,7 +8,7 @@ window.navigator.geolocation.getCurrentPosition(function (geoData) {
   const urlParams = new URLSearchParams(window.location.search);
   const protein = urlParams.get("protein");
   const params = new URLSearchParams({
-    key: "40e793cde7d7318555e7aba7e6fbe541",
+    key: "bf005821722b3bd1b59ffac9822ca5ba",
     lat: geoData.coords.latitude,
     lon: geoData.coords.longitude,
     distance: 1,
