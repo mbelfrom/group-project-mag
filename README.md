@@ -16,6 +16,7 @@ Have you ever been stuck not knowing what to eat for dinner? Our web app will ge
 - Annalisa Bauer
 
 ## Images
+![image](https://user-images.githubusercontent.com/87721575/132913782-9d9b3185-3846-444c-8ef1-0ed828521688.png)
 
 ## Questions/Contact
 Please contact us with any questions at...
