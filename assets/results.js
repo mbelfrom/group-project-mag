@@ -31,22 +31,26 @@ fetch(edamam_url + params)
     const ingredients = data.hits[0].recipe.ingredientLines;
     const directions = data.hits[0].recipe.url;
     
+    // append recipe name 
     const recipeDiv = document.getElementById('recipe-result');
     const recipeElement = document.createElement('h1');
     recipeElement.innerText = `${recipeName}`;
     recipeDiv.append(recipeElement); 
 
+    // append img 
     const imgElement = document.createElement('img');
     imgElement.setAttribute("src", `${image}`);
     imgElement.setAttribute('height','auto');
     imgElement.setAttribute('width', 'auto');
     document.getElementById('recipe-img').append(imgElement);
 
-    const ingredientDiv = document.getElementById("ingredients-li");
+    // append ingredients
+    const ingredientDiv = document.getElementById("ingredients-p");
     const ingredientElement = document.createElement('p');
     ingredientElement.innerText = `${ingredients}`;
     ingredientDiv.append(ingredientElement);
     
+    // append directions url
     const directionsDiv = document.getElementById("directions-div");
     const directionsElement = document.createElement('a');
     const link = document.createTextNode('Click here for full directions.');
