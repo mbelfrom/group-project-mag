@@ -76,5 +76,5 @@ recipes.splice(index, 1);
 window.localStorage.setItem("recipes", JSON.stringify(recipes));
 $('.column').remove();
 populateMeals();
-console.log()
+console.log(removeRecipe);
 }
