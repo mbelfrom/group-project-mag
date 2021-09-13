@@ -28,6 +28,6 @@ Have you ever been stuck not knowing what to eat for dinner? Our web app will ge
 
 
 ## Questions/Contact
-Please contact us with any questions at...
-Our recipe generator app can be found hosted at...
+Please contact us with any questions at annalisa.bauer1@gmail.com, Mibelfrom@gmail.com, giselleborbolla@yahoo.com.
+Our recipe generator app can be found hosted at https://mbelfrom.github.io/group-project-mag/
 
